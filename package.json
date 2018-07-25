@@ -1,0 +1,32 @@
+{
+    "name": "democarhost-ui",
+    "version": "1.0.0",
+    "description": "This project is the proxyserver for demo car host",
+    "main": "index.js",
+    "directories": {
+        "test": "test"
+    },
+    "scripts": {
+        "preinstall": "npm cache clean --force",
+        "start": "node tripsimulation_proxy_service.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://msazure.visualstudio.com/DefaultCollection/One/_git/Azure-IoT-ConnectedCar-Core"
+    },
+    "keywords": [
+        "democarhost",
+        "ui",
+        "datageneration"
+    ],
+    "author": "Microsoft, Inc.",
+    "license": "ISC",
+    "dependencies": {
+        "body-parser": "1.18.3",
+        "cors": "^2.8.4",
+        "express": "4.16.3",
+        "http-server": "0.11.1",
+        "request": "2.87.0",
+        "signalrjs": "0.2.2"
+    }
+}

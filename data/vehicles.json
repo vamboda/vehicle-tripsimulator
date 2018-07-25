@@ -1,0 +1,29 @@
+[{
+        "VehicleId": "Shuttle_1",
+        "Location": {
+            "latitude": 46.11641,
+            "longitude": -107.58724
+        }
+    },
+    {
+        "VehicleId": "Shuttle_2",
+        "Location": {
+            "latitude": 47.60159,
+            "longitude": -122.13092
+        }
+    },
+    {
+        "VehicleId": "Shuttle_3",
+        "Location": {
+            "latitude": 46.13443,
+            "longitude": -107.53884
+        }
+    },
+    {
+        "VehicleId": "Shuttle_4",
+        "Location": {
+            "latitude": 40.89661,
+            "longitude": -73.9711
+        }
+    }
+]
