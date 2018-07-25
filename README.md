@@ -4,4 +4,4 @@ vehicle-tripsimulator is a NodeJS based signalR server, emitting gps location, s
 
  - Run npm install and, then npm start
  
- Service will start up at the p;ort: 5000
+ Service will start up at the port: 5000
