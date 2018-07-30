@@ -36,8 +36,8 @@ server.get("/", function(req, res) {
 });
 
 let shuttle1LocationIndex = 0;
-
 let shuttle2LocationIndex = 51;
+let shuttle3LocationIndex = 21;
 
 /* serves main page */
 server.get("/vehiclelocation", function(req, res) {
@@ -71,7 +71,7 @@ setInterval(function() {
 
 setInterval(function() {
   var shuttle2Id = "Shuttle_2";
-  shuttle2LocationIndex += 18;
+  shuttle2LocationIndex += 13;
   var shuttle2GpsLocation = route[shuttle2LocationIndex % route.length];
   
   console.log(
@@ -82,4 +82,20 @@ setInterval(function() {
     Method: "locationModified",
     Args: [shuttle2Id, shuttle2GpsLocation]
   });
-}, 42);
+}, 1920);
+
+
+setInterval(function() {
+  var shuttle3Id = "Shuttle_3";
+  shuttle3LocationIndex += 10;
+  var shuttle3GpsLocation = route[shuttle3LocationIndex % route.length];
+  
+  console.log(
+    `Moving the ${shuttle3Id} to the ${JSON.stringify(shuttle3GpsLocation)}`
+  );
+  signalR.broadcast({
+    Hub: "signalRNotificationHub",
+    Method: "locationModified",
+    Args: [shuttle3Id, shuttle3GpsLocation]
+  });
+}, 1720);
